@@ -1,0 +1,31 @@
+
+    <h1  class="heading"><span>Smart Watch</span></h1>
+    <div class="box-container">
+        <div class="box">
+            
+            <img src="/w/51NI32gmSHL._UX466_.jpg" alt="" >
+            <div class="content">
+                <h3>Maxima </h3>
+                <div class="price">₹6,100.00 -<span>-₹6,999.00</span></div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <form action="{% url 'charge' %}" method="post">
+
+                    <script src="https://checkout.stripe.com/checkout.js" class="Stripe-button"
+                       data-key="{{ key }}"
+                       data-description="Payment Gateway"
+                       data-amount="000"
+                       data-locale="auto">
+                    </script>
+                    </form>
+                
+            </div>
+        </div>
+        
+
+
